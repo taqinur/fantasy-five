@@ -126,12 +126,26 @@
               </p>
             </div>
           </div>
-          <div class="card text-bg-dark mb-3" style="max-width: 18rem; height: 25rem;">
+          <div class="card text-bg-dark mb-3" style="max-width: 18rem; height: 30rem;">
             <div class="card-body">
-              <h2 class="card-title text-center">Budget</h2>
-              <p class="card-text fs-5">
-                Per Player <input type="number" name="" id="">
+              <h2 class="card-title text-center">Budget <hr></h2>
+              <p class="card-text">
+                Per Player <input type="number" name="" id="costPerPlayer" placeholder="Input Cost">
               </p>
+              <button id="calculate-players-cost" type="button" class="btn btn-primary">
+                Calculate
+              </button>
+              <p class="fs-5">Player Expenses: $<span id="player-expenses"></span></p>
+              <p class="card-text">
+                Manager <input type="number" name="" id="cost-Manager">
+              </p>
+              <p class="card-text">
+                Coach <input type="number" name="" id="cost-Coach">
+              </p>
+              <button id="calculate-total" type="button" class="btn btn-primary">
+                Calculate Total
+              </button>
+              <p class="fs-5">Total: $<span id="total-expenses"></span></p>
             </div>
           </div>
         </div>
